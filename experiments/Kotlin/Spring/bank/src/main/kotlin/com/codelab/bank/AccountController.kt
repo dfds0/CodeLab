@@ -14,6 +14,7 @@ class AccountController (private val repository: AccountRepository) {
     }
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     fun create(@RequestBody account: Account): Account {
         return repository.save(account)
     }
