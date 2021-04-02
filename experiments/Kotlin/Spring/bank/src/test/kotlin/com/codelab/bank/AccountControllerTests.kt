@@ -1,5 +1,7 @@
 package com.codelab.bank
 
+import com.codelab.bank.model.Account
+import com.codelab.bank.repository.AccountRepository
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test

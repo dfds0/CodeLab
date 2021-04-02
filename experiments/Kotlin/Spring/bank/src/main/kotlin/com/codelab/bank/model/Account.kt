@@ -1,4 +1,4 @@
-package com.codelab.bank
+package com.codelab.bank.model
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
