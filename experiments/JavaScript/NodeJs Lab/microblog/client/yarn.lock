@@ -2135,7 +2135,7 @@ autoprefixer@^9.6.1:
     chalk "^2.4.2"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
-    postcss "^7.0.27"
+    postcss "^7.0.36"
     postcss-value-parser "^4.0.3"
 
 aws-sign2@~0.7.0:
@@ -2645,7 +2645,7 @@ cacache@^13.0.1:
     p-map "^3.0.0"
     promise-inflight "^1.0.1"
     rimraf "^2.7.1"
-    ssri "^7.0.0"
+    ssri "^7.1.1"
     unique-filename "^1.1.1"
 
 cache-base@^1.0.1:
