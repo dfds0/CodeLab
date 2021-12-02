@@ -4,9 +4,11 @@ fun main() {
     testClient()
 }
 
-class Client(var name: String, var account: Int, var balance: Double) {
+class Client(val name: String, val account: Int) {
+    var balance = 0.0
+        private set
 
-    private fun changeBalance(balance: Double) {
+    fun changeBalance(balance: Double) {
         this.balance += balance
     }
 
@@ -37,11 +39,12 @@ fun testClient() {
             break
         }
 
-        val client = Client("Klient$index", 9000000 + index, (100 + index).toDouble())
+        val client = Client(name = "Klient$index", account = 9000000 + index)
 
         println("Klient: ${client.name} - #${client.account}")
         println("Bilans konta: ${client.balance}")
 
+        client.changeBalance((100 + index).toDouble())
         client.checkBalance()
 
         previousClient?.moveBalance((10 + index).toDouble(), client)
