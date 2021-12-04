@@ -1,20 +1,13 @@
-class Manager(
-    val name: String,
-    val document: String,
-    val salary: Double,
+open class Manager(
+    name: String,
+    document: String,
+    salary: Double,
     val password: String
-) {
-    fun bonus(): Double {
-        return salary * 0.2
-    }
+) : Employee(name, document, salary) {
+
+    override val salaryBonus: Double get() = super.salaryBonus + this.salary
 
     fun auth(password: String): Boolean {
         return password == this.password
-    }
-
-    fun about() {
-        println("Name: ${this.name}")
-        println("Document: ${this.document}")
-        println("Salary: ${this.salary}. + Bonus: ${this.bonus()}")
     }
 }
