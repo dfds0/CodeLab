@@ -1,3 +1,5 @@
+package model
+
 class Director(
     name: String,
     document: String,

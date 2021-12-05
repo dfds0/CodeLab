@@ -1,8 +1,10 @@
-class Client(val name: String, val account: Int) {
-    var balance = 0.0
-        private set
+package model
 
-    fun changeBalance(balance: Double) {
+open class Client(val name: String, val account: Int) {
+    var balance = 0.0
+        protected set
+
+    private fun changeBalance(balance: Double) {
         this.balance += balance
     }
 
@@ -20,6 +22,16 @@ class Client(val name: String, val account: Int) {
             client.changeBalance(value)
 
             println("-- przeniesiony: $value od klienta ${this.account}, do klienta ${client.account}")
+        }
+    }
+
+    open fun addBalance(value: Double) {
+        this.balance += value
+    }
+
+    open fun removeBalance(value: Double) {
+        if (this.balance >= value) {
+            this.balance -= value
         }
     }
 }

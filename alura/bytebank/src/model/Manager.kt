@@ -1,3 +1,7 @@
+package model
+
+import model.Employee
+
 open class Manager(
     name: String,
     document: String,

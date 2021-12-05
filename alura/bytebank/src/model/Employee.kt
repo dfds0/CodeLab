@@ -1,3 +1,5 @@
+package model
+
 open class Employee(
     val name: String,
     val document: String,
