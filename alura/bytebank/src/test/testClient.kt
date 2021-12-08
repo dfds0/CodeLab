@@ -1,4 +1,5 @@
-import model.Client
+import model.client.Client
+import model.client.ClientTierA
 
 fun testClient() {
     var previousClient: Client? = null
@@ -9,7 +10,7 @@ fun testClient() {
             break
         }
 
-        val client = Client(name = "Klient$index", account = 9000000 + index)
+        val client = ClientTierA(name = "Klient$index", account = 9000000 + index)
 
         println("Klient: ${client.name} - #${client.account}")
         println("Bilans konta: ${client.balance}")

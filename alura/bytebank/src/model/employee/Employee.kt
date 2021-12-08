@@ -1,11 +1,11 @@
-package model
+package model.employee
 
-open class Employee(
+abstract class Employee(
     val name: String,
     val document: String,
     val salary: Double
 ) {
-    open val salaryBonus: Double get() = salary * 0.1
+    abstract val salaryBonus: Double
 
     fun about() {
         println("Name: ${this.name}")

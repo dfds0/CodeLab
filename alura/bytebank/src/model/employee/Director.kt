@@ -1,11 +1,14 @@
-package model
+package model.employee
 
 class Director(
     name: String,
     document: String,
     salary: Double,
     password: String,
-    val plr: Double
+    private val plr: Double
 ) : Manager(name, document, salary, password) {
-    override val salaryBonus: Double get() = super.salaryBonus + this.salary + this.plr
+
+    override val salaryBonus: Double
+        get() =  super.salary * 0.05 + this.plr
+
 }

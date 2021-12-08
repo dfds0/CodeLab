@@ -1,4 +1,4 @@
-package model
+package model.client
 
 class ClientTierA(name: String, account: Int) : Client(name, account) {
 
@@ -7,4 +7,5 @@ class ClientTierA(name: String, account: Int) : Client(name, account) {
             this.balance -= (value + 0.1)
         }
     }
+
 }

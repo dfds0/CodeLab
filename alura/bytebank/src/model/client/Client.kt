@@ -1,6 +1,6 @@
-package model
+package model.client
 
-open class Client(val name: String, val account: Int) {
+abstract class Client(val name: String, val account: Int) {
     var balance = 0.0
         protected set
 
@@ -29,9 +29,5 @@ open class Client(val name: String, val account: Int) {
         this.balance += value
     }
 
-    open fun removeBalance(value: Double) {
-        if (this.balance >= value) {
-            this.balance -= value
-        }
-    }
+    abstract fun removeBalance(value: Double)
 }

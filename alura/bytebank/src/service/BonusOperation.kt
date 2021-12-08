@@ -1,6 +1,6 @@
 package service
 
-import model.Employee
+import model.employee.Employee
 
 class BonusOperation {
 
