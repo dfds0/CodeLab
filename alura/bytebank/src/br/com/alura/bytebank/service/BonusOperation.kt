@@ -1,7 +1,7 @@
-package service
+package br.com.alura.bytebank.service
 
-import model.employee.Administrator
-import model.employee.Employee
+import br.com.alura.bytebank.model.employee.Administrator
+import br.com.alura.bytebank.model.employee.Employee
 
 class BonusOperation {
 

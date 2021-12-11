@@ -1,7 +1,7 @@
-import model.employee.Analyst
-import model.employee.Director
-import model.employee.Manager
-import service.BonusOperation
+import br.com.alura.bytebank.model.employee.Analyst
+import br.com.alura.bytebank.model.employee.Director
+import br.com.alura.bytebank.model.employee.Manager
+import br.com.alura.bytebank.service.BonusOperation
 
 fun testEmployee() {
 

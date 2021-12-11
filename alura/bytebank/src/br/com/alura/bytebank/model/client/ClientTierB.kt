@@ -1,4 +1,4 @@
-package model.client
+package br.com.alura.bytebank.model.client
 
 class ClientTierB(name: String, account: Int) : Client(name, account) {
 

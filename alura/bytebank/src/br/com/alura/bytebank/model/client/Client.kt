@@ -1,4 +1,4 @@
-package model.client
+package br.com.alura.bytebank.model.client
 
 abstract class Client(val name: String, val account: Int) {
     var balance = 0.0

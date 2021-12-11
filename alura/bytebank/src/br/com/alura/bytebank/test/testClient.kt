@@ -1,5 +1,5 @@
-import model.client.Client
-import model.client.ClientTierA
+import br.com.alura.bytebank.model.client.Client
+import br.com.alura.bytebank.model.client.ClientTierA
 
 fun testClient() {
     var previousClient: Client? = null

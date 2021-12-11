@@ -1,6 +1,6 @@
-package model.client
+package br.com.alura.bytebank.model.client
 
-import model.employee.Authentication
+import br.com.alura.bytebank.model.employee.Authentication
 
 class ClientTierC(name: String, account: Int, private val password: String) : Client(name, account), Authentication {
 

@@ -1,6 +1,6 @@
-package model.system
+package br.com.alura.bytebank.model.system
 
-import model.employee.Authentication
+import br.com.alura.bytebank.model.employee.Authentication
 
 class SystemInternal {
 

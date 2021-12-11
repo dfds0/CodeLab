@@ -1,4 +1,4 @@
-package model.employee
+package br.com.alura.bytebank.model.employee
 
 open class Manager(
     name: String,

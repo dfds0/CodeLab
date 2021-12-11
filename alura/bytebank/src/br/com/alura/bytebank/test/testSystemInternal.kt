@@ -1,9 +1,9 @@
-package test
+package br.com.alura.bytebank.test
 
-import model.client.ClientTierC
-import model.employee.Director
-import model.employee.Manager
-import model.system.SystemInternal
+import br.com.alura.bytebank.model.client.ClientTierC
+import br.com.alura.bytebank.model.employee.Director
+import br.com.alura.bytebank.model.employee.Manager
+import br.com.alura.bytebank.model.system.SystemInternal
 
 fun testSystemInternal() {
 
