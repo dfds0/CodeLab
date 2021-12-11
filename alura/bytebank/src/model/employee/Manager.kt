@@ -1,7 +1,5 @@
 package model.employee
 
-import model.employee.Employee
-
 open class Manager(
     name: String,
     document: String,
@@ -10,5 +8,6 @@ open class Manager(
 ) : Administrator(name, document, salary, password) {
 
     override val salaryBonus: Double
-        get() =  super.salary * 0.2
+        get() = super.salary * 0.2
+
 }

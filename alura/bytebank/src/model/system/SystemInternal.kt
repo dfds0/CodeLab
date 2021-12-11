@@ -1,14 +1,14 @@
 package model.system
 
-import model.employee.Administrator
+import model.employee.Authentication
 
 class SystemInternal {
 
-    fun login(administrator: Administrator, passsword: String) {
-        if (administrator.auth(passsword)) {
-            println("Dostęp dozwolony!")
+    fun login(authentication: Authentication, passsword: String) {
+        if (authentication.auth(passsword)) {
+            println("Dostęp dozwolony!\n")
         } else {
-            println("Odmowa dostępu!")
+            println("Odmowa dostępu!\n")
         }
     }
 

@@ -5,9 +5,10 @@ abstract class Administrator(
     document: String,
     salary: Double,
     private val password: String
-) : Employee(name, document, salary) {
+) : Employee(name, document, salary), Authentication {
 
-    fun auth(password: String): Boolean {
+    override fun auth(password: String): Boolean {
         return password == this.password
     }
+
 }
