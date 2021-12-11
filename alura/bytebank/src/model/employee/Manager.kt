@@ -6,13 +6,9 @@ open class Manager(
     name: String,
     document: String,
     salary: Double,
-    private val password: String
-) : Employee(name, document, salary) {
+    password: String
+) : Administrator(name, document, salary, password) {
 
     override val salaryBonus: Double
         get() =  super.salary * 0.2
-
-    fun auth(password: String): Boolean {
-        return password == this.password
-    }
 }

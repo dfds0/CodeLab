@@ -19,5 +19,6 @@ fun testEmployee() {
     type4.about()
     operation.execute(type4)
 
-    println("Total: ${operation.total}")
+    println("Total: ${operation.total}\n\n")
+
 }

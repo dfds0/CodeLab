@@ -1,5 +1,6 @@
 package service
 
+import model.employee.Administrator
 import model.employee.Employee
 
 class BonusOperation {
@@ -9,6 +10,10 @@ class BonusOperation {
 
     fun execute(employee: Employee) {
         this.total += employee.salaryBonus
+    }
+
+    fun execute(administrator: Administrator) {
+        this.total += administrator.salaryBonus
     }
 
 }

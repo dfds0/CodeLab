@@ -1,4 +1,3 @@
-import model.client.Client
 import model.client.ClientTierA
 import model.client.ClientTierB
 
