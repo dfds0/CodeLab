@@ -1,6 +1,6 @@
-import br.com.alura.bytebank.model.client.ClientTierA
-import br.com.alura.bytebank.model.client.ClientTierB
-import br.com.alura.bytebank.model.client.ClientTierC
+import br.com.alura.bytebank.model.tier.ClientTierA
+import br.com.alura.bytebank.model.tier.ClientTierB
+import br.com.alura.bytebank.model.tier.ClientTierC
 
 fun testClientTier() {
     val clientTierA = ClientTierA("Tier A", 456)

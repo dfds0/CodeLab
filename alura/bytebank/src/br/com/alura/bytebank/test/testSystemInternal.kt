@@ -1,6 +1,6 @@
 package br.com.alura.bytebank.test
 
-import br.com.alura.bytebank.model.client.ClientTierC
+import br.com.alura.bytebank.model.tier.ClientTierC
 import br.com.alura.bytebank.model.employee.Director
 import br.com.alura.bytebank.model.employee.Manager
 import br.com.alura.bytebank.model.system.SystemInternal

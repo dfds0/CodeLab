@@ -1,33 +1,16 @@
 package br.com.alura.bytebank.model.client
 
-abstract class Client(val name: String, val account: Int) {
-    var balance = 0.0
-        protected set
+import br.com.alura.bytebank.model.employee.Authentication
 
-    private fun changeBalance(balance: Double) {
-        this.balance += balance
+class Client(
+    var name: String,
+    val document: String,
+    var address: Address = Address(),
+    private val password: String
+) : Authentication {
+
+    override fun auth(password: String): Boolean {
+        return this.password == password
     }
 
-    fun checkBalance() {
-        when {
-            this.balance > 0.0 -> println("- Saldo dodatnie")
-            this.balance < 0.0 -> println("- Saldo ujemne")
-            else -> println("- saldo neutralna")
-        }
-    }
-
-    fun moveBalance(value: Double, client: Client) {
-        if (this.balance >= value) {
-            this.changeBalance(-value)
-            client.changeBalance(value)
-
-            println("-- przeniesiony: $value od klienta ${this.account}, do klienta ${client.account}")
-        }
-    }
-
-    open fun addBalance(value: Double) {
-        this.balance += value
-    }
-
-    abstract fun removeBalance(value: Double)
 }

@@ -1,8 +1,8 @@
-import br.com.alura.bytebank.model.client.Client
-import br.com.alura.bytebank.model.client.ClientTierA
+import br.com.alura.bytebank.model.tier.ClientTier
+import br.com.alura.bytebank.model.tier.ClientTierA
 
 fun testClient() {
-    var previousClient: Client? = null
+    var previousClient: ClientTier? = null
     for (index in 100 downTo 1 step 5) {
         println("")
 
