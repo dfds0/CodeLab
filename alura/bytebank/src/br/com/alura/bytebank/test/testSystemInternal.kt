@@ -1,5 +1,6 @@
 package br.com.alura.bytebank.test
 
+import br.com.alura.bytebank.model.employee.Authentication
 import br.com.alura.bytebank.model.tier.ClientTierC
 import br.com.alura.bytebank.model.employee.Director
 import br.com.alura.bytebank.model.employee.Manager
@@ -17,8 +18,19 @@ fun testSystemInternal() {
     println("Użytkownik: ${type3.name}")
     system.login(type3, "ABC")
 
-    val tyerC = ClientTierC("TierC", 0, "GhI")
-    println("Użytkownik: ${tyerC.name}")
-    system.login(tyerC, "GhI")
+    val tierC = ClientTierC("TierC", 0, "GhI")
+    println("Użytkownik: ${tierC.name}")
+    system.login(tierC, "GhI")
 
+    val typeO = object: Authentication {
+        val name = "Object"
+        val password = "123"
+
+        override fun auth(password: String): Boolean {
+            return this.password == password
+        }
+    }
+
+    println("Użytkownik: ${typeO.name}")
+    system.login(typeO, "123")
 }
