@@ -1,3 +1,4 @@
+import br.com.alura.bytebank.test.testObject
 import br.com.alura.bytebank.test.testSystemInternal
 
 fun main() {
@@ -7,4 +8,5 @@ fun main() {
     testClientTier()
     testEmployee()
     testSystemInternal()
+    testObject()
 }
