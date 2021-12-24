@@ -4,6 +4,7 @@ import br.com.alura.bytebank.model.employee.Manager
 import br.com.alura.bytebank.service.BonusOperation
 
 fun testEmployee() {
+    println("\n### testEmployee")
 
     val operation = BonusOperation()
 

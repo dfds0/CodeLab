@@ -3,6 +3,8 @@ import br.com.alura.bytebank.model.tier.ClientTierB
 import br.com.alura.bytebank.model.tier.ClientTierC
 
 fun testClientTier() {
+    println("\n### testClientTier")
+
     val clientTierA = ClientTierA("Tier A", 456)
     val clientTierB = ClientTierB("Tier B", 789)
     val clientTierC = ClientTierC("Tier C", 123, "123")

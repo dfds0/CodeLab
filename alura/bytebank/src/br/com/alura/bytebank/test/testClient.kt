@@ -2,6 +2,8 @@ import br.com.alura.bytebank.model.tier.ClientTier
 import br.com.alura.bytebank.model.tier.ClientTierA
 
 fun testClient() {
+    println("\n### testClient")
+
     var previousClient: ClientTier? = null
     for (index in 100 downTo 1 step 5) {
         println("")

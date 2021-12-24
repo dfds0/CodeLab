@@ -4,6 +4,8 @@ import br.com.alura.bytebank.model.employee.Employee
 import br.com.alura.bytebank.model.employee.Manager
 
 fun testObject() {
+    println("\n### testObject")
+
     var manager = Manager("Manager", "123456789", 200.0, "ABC")
 
     redo("Process finished with exit code ")

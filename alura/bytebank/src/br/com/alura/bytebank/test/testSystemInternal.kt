@@ -7,6 +7,7 @@ import br.com.alura.bytebank.model.employee.Manager
 import br.com.alura.bytebank.model.system.SystemInternal
 
 fun testSystemInternal() {
+    println("\n### testSystemInternal")
 
     val system = SystemInternal()
 
