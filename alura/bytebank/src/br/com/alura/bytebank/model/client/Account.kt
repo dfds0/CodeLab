@@ -1,5 +1,7 @@
 package br.com.alura.bytebank.model.client
 
+import br.com.alura.bytebank.exception.NoBalanceException
+
 class Account(
     var client: Client,
     var number: Int
@@ -17,9 +19,10 @@ class Account(
     }
 
     fun move(amount: Double) {
-        if (amount > 0) {
-            this.amount += amount
+        if (amount < 0) {
+            throw NoBalanceException()
         }
+        this.amount += amount
     }
 
 }

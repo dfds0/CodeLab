@@ -1,10 +1,13 @@
 package br.com.alura.bytebank.test
 
+import br.com.alura.bytebank.exception.NoBalanceException
+
 fun testDebug() {
     println("\n### testDebug")
 
     function1()
     function4()
+    function5()
 }
 
 fun function1() {
@@ -62,4 +65,18 @@ fun function4() {
     println("-- valueZ = $valueZ")
 
     println("- function 4 end")
+}
+
+fun function5(){
+    println("- function 5 start")
+    try {
+        function6()
+    } catch (exception: NoBalanceException) {
+        println(exception.message)
+    }
+    println("- function 5 end")
+}
+
+fun function6(){
+    throw NoBalanceException()
 }
