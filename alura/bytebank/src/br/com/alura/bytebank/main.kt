@@ -1,4 +1,5 @@
 import br.com.alura.bytebank.test.testDebug
+import br.com.alura.bytebank.test.testException
 import br.com.alura.bytebank.test.testObject
 import br.com.alura.bytebank.test.testSystemInternal
 
@@ -11,4 +12,5 @@ fun main() {
     testSystemInternal()
     testObject()
     testDebug()
+    testException()
 }

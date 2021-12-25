@@ -1,3 +1,3 @@
 package br.com.alura.bytebank.exception
 
-class NoBalanceException: Exception("No balance Exception!")
+class NoBalanceException(message: String = "No balance exception!") : Exception(message)
