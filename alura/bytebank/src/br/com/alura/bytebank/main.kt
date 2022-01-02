@@ -1,7 +1,4 @@
-import br.com.alura.bytebank.test.testDebug
-import br.com.alura.bytebank.test.testException
-import br.com.alura.bytebank.test.testObject
-import br.com.alura.bytebank.test.testSystemInternal
+import br.com.alura.bytebank.test.*
 
 fun main() {
     println("Witamy w ByteBank!")
@@ -13,4 +10,5 @@ fun main() {
     testObject()
     testDebug()
     testException()
+    testNull()
 }
