@@ -1,21 +1,12 @@
 # CodeLab
 
-## Challenges
-- domain-crawler.py
-- pathfinder.py
-## Experiments
-- C#
-- Go
-- Java
-- JavaScript
-- Kotlin
-- Python 
-- Terraform
-## Projects
-- bot_twitch_rpg
-- local_tasks
-## Solutions
-- gitlab-baseline-generate.py
-- gitlab-milestone-close.py
-- sqlserver-database-reset.py
-- x0-lang.py
+### Alura
+    - Kotlin
+### Challenges
+    - ...
+### Experiments
+    - C#, Go, Java, JavaScript, Kotlin, Python, Terraform
+### Projects
+    - bot_twitch_rpg, local_tasks
+### Solutions
+    - ...
