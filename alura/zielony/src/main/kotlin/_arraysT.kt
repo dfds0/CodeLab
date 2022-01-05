@@ -26,10 +26,39 @@ fun main() {
     }.toTypedArray()
 
     println(arrayB10.contentToString())
+
+    val sumAll1 = arrayB10.sumAll()
+    println("Sum all 1: $sumAll1")
+
+    val amount = 6.toBigDecimal()
+    val sumAll6 = arrayB10.fold(sumAll1) { acc, value ->
+        ((acc + value) * amount).setScale(2, RoundingMode.UP)
+    }
+    println("Sum all 6: $sumAll6")
+
+    val averageLast3 = arrayB10.sorted().takeLast(3).toTypedArray().average()
+    println("Average last 3: $averageLast3")
+
+    val averageFirst3 = arrayB10.sorted().take(3).toTypedArray().average()
+    println("Average first 3: $averageFirst3")
 }
 
 fun toArrayBigDecimal(vararg values: String): Array<BigDecimal> {
     return Array(values.size) { index ->
         values[index].toBigDecimal()
+    }
+}
+
+fun Array<BigDecimal>.sumAll(): BigDecimal {
+    return this.reduce { acc, value ->
+        acc + value
+    }
+}
+
+fun Array<BigDecimal>.average(): BigDecimal {
+    return if (this.isEmpty()) {
+        BigDecimal.ZERO
+    } else {
+        this.sumAll() / this.size.toBigDecimal()
     }
 }
