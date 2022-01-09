@@ -5,6 +5,7 @@ fun main(args: Array<String>) {
     println(mapA)
     println(mapB)
 
+    println()
     for (it: Map.Entry<Int, Double> in mapB) {
         println("${it.key} - ${it.value}")
     }
@@ -17,11 +18,44 @@ fun main(args: Array<String>) {
     mapB.putIfAbsent(6, 200.0)
     mapB.putIfAbsent(6, 2.0)
 
+    println()
     println(mapB)
 
     mapB.remove(6)
     mapB.remove(3, 44.44)
     mapB.remove(1, 100.0)
 
+    println()
     println(mapB)
+
+    val _a = mapB.getValue(3)
+    val _b = mapB.getValue(5)
+    val _c = mapB.getOrElse(0) { "Not Found!" }
+    val _d = mapB.getOrDefault(9, -1.0)
+
+    println()
+    println(" a = $_a, b = $_b, c = $_c, d = $_d")
+
+    println()
+    println(mapB.keys)
+    println(mapB.values)
+
+    val mapC = mapB.filter { (key, value) ->
+        key % 2 == 1 && value > 50.0
+    }
+
+    println()
+    println(mapC)
+
+    val mapD = mapC + mapOf(7 to 88.0, 8 to 14.0)
+
+    println()
+    println(mapD)
+
+    val mapE = mapD - mapOf(6 to 6.6)
+    val mapF = mapE - mapOf(7 to 88.0)
+
+    println()
+    println(mapE)
+    println(mapF)
 }
