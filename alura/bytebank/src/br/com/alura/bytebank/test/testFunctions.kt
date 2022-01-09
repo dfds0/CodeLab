@@ -73,9 +73,9 @@ fun testFunctions() {
         return value + 100.0
     }
 
-    println(operatorA(1101.0))
-    println(operatorA(1001.0))
-    println(operatorA(101.0))
+    println(operatorB(1101.0))
+    println(operatorB(1001.0))
+    println(operatorB(101.0))
 }
 
 fun functionA() {}
