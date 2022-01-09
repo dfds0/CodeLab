@@ -11,4 +11,5 @@ fun main() {
     testDebug()
     testException()
     testNull()
+    testFunctions()
 }

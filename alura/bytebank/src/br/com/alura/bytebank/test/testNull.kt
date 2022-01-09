@@ -1,6 +1,5 @@
 package br.com.alura.bytebank.test
 
-import br.com.alura.bytebank.model.client.Address
 import br.com.alura.bytebank.model.client.Client
 import java.lang.NullPointerException
 
