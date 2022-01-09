@@ -12,4 +12,5 @@ fun main() {
     testException()
     testNull()
     testFunctions()
+    testLet()
 }
