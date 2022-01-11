@@ -39,6 +39,21 @@ fun testLet() {
     functionA(1, 2) {
         println(it)
     }
+
+    println("\n")
+
+    Address(state = "SP", city = "SP", location = "BR").apply { this
+        "${this.location}"
+    }.let {
+        println(it)
+    }
+
+    Address(state = "SP", city = "SP", location = "BR").run { this
+        "${this.location}"
+    }.let {
+        println(it)
+    }
+
 }
 
 fun orderA(value: Int, operator: () -> String) {
