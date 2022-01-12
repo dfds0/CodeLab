@@ -14,6 +14,8 @@ fun main() {
     testFunctions()
     testLet()
     testWith()
+    testRun()
+    testHOF()
 
     // .let     - it    -> return lambda        // Em objetos não nulos
     // .run     - this  -> return lambda        // Configuração e computação de resultado
