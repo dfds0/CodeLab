@@ -1,9 +1,0 @@
-﻿appdirs==1.4.3
-certifi==2022.12.7
-distlib==0.3.0
-filelock==3.0.12
-pipenv==2018.11.26
-six==1.14.0
-virtualenv==20.0.18
-virtualenv-clone==0.5.4
-Flask==1.1.2
